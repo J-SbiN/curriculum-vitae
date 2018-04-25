@@ -1,0 +1,251 @@
+
+
+
+/* 
+   Barra Cross-browser 
+   */		
+
+
+/* @font-face */
+
+
+
+/* Reset estilos */
+
+html, body {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+* {margin: 0; padding: 0; border: none;}
+.hidden {display:none !important}
+
+
+/* Contain floats: h5bp.com/q */ 
+/* For modern browsers */
+.cf:before,
+.cf:after {
+  content:"";
+  display:table;
+}
+
+.cf:after {
+  clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+  zoom:1;
+}
+
+/* Estilos visuais */
+
+a{color:#DDD; text-decoration: none;}
+a:hover{color:#00CCFF;}
+
+
+/* Barra Fechada*/
+
+#bar-ist-network {float: left; position: relative; z-index: 999; width: 100%; font-family: 'KlavikaRegularPlain', Arial, Helvetica, sans-serif;}
+#bar-ist-network #bar, #bar-ist-network #bar-open {
+  background: #555555; /* Old browsers */
+  *background: #555555 !important; /* Ie7 */
+  background: -moz-linear-gradient(left, rgba(59,59,59,1) 0%, rgba(85,85,85,1) 40%, rgba(85,85,85,1) 60%, rgba(59,59,59,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(59,59,59,1)), color-stop(40%,rgba(85,85,85,1)), color-stop(60%,rgba(85,85,85,1)), color-stop(100%,rgba(59,59,59,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(59,59,59,1) 0%,rgba(85,85,85,1) 40%,rgba(85,85,85,1) 60%,rgba(59,59,59,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(59,59,59,1) 0%,rgba(85,85,85,1) 40%,rgba(85,85,85,1) 60%,rgba(59,59,59,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(59,59,59,1) 0%,rgba(85,85,85,1) 40%,rgba(85,85,85,1) 60%,rgba(59,59,59,1) 100%); /* IE10+ */
+  background: linear-gradient(left, rgba(59,59,59,1) 0%,rgba(85,85,85,1) 40%,rgba(85,85,85,1) 60%,rgba(59,59,59,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3b3b', endColorstr='#555555',GradientType=1); /* IE6-9 */
+}
+
+#bar-ist-network #bar,
+#bar-ist-network.liquid #bar .width,
+#bar-ist-network.liquid #bar-open,
+#bar-ist-network.fixed #bar-open {width: 100%; margin: 0 auto; position: relative;}
+
+#bar-ist-network #bar, #bar-ist-network #bar .width, #bar-ist-network .inner-width {height:34px;}
+#bar-ist-network #bar {z-index:2000px; box-shadow: 0 0 6px rgba(0, 0, 0, 0.7); -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.7); -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);}
+
+#bar-ist-network .inner-width,	
+#bar-ist-network.fixed #bar .width,
+#bar-ist-network.liquid #bar-open .width,
+#bar-ist-network.fixed #bar-open .width { width: 980px;  height:100%; margin: 0 auto; position: relative;}
+
+#bar-ist-network.liquid #bar h1 {left: 25px;}
+#bar-ist-network.liquid #bar #authentication {right: 25px;}
+		
+.inner-width h2 {float: left;}
+
+h1 {position:absolute; top:0; z-index: 1000; font-size: 12px; line-height: 1;}
+
+h1 a#logo {float: left; width: 180px; text-transform: uppercase; font-weight: normal; height:23px; padding-top: 11px;}
+h1 a#logo strong{font-family: 'KlavikaBold', Arial, Helvetica, sans-serif;}
+
+
+
+/* Bloco de autenticação no canto superior direito — contém todos os dados do utilizador, assim como opções login/logout */
+
+#authentication {position: absolute; top: 0; right:0; z-index: 1000;}
+#authentication p{float: left; color: #DDD; line-height: 1; font-size: 12px;}
+#authentication #name, #authentication #message{float:left; height:23px; padding-right: 20px; padding-top: 11px; text-transform: uppercase;  font-weight: bold; font-family: 'KlavikaMediumPlain', Arial, Helvetica, sans-serif;}
+#authentication #message {padding-right: 15px !important; font-weight: normal; font-family: 'KlavikaRegularPlain', Arial, Helvetica, sans-serif; animation: pulse 10s infinite alternate; -webkit-animation: pulse 10s infinite alternate; -moz-animation: pulse 10s infinite alternate; -ms-animation: pulse 10s infinite alternate; -o-animation: pulse 10s infinite alternate;}
+#authentication #name, #authentication #message{height/*\**/:22px\9 !important; padding-top/*\**/: 12px\9 !important;}
+/* IE7, IE8 */
+#veinte { color/*\**/: blue\9; }
+	
+@keyframes pulse {
+  0% {color:#00CCFF;}
+100% {color: #DDD;}
+}
+
+@-webkit-keyframes pulse {
+  0% {color:#00CCFF;}
+100% {color: #DDD;}
+}
+
+@-moz-keyframes pulse {
+  0% {color:#00CCFF;}
+100% {color: #DDD;}
+}
+@-ms-keyframes pulse {
+  0% {color:#00CCFF;}
+100% {color: #DDD;}
+}
+@-o-keyframes pulse {
+  0% {color:#00CCFF;}
+100% {color: #DDD;}
+}
+
+
+#authentication h2 {float: left;}
+
+h2 a#network-btn, 
+h2 a#login-btn, h2 a#logout-btn {float: left; height: 18px; padding-top: 6px; font-size: 12px; line-height: 1; font-weight: normal; text-transform: uppercase; margin-top: 5px;}
+h2 a#network-btn, h2 a#login-btn, h2 a#logout-btn {padding-top/*\**/: 7px\9; height/*\**/: 17px\9;}
+h2 a#istid-btn {float: left; height: 18px; padding-top: 6px; font-size: 12px; line-height: 1; font-weight: normal; text-transform: uppercase; margin-top: 5px;}
+
+h2 a#istid-btn,
+h2 a#network-btn, 
+h2 a#login-btn,h2 a#logout-btn,
+#bar-open #ist-network-menu section ul li a:hover,
+.inputtext {border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px;	-moz-border-radius: 3px;}
+
+h2 a#network-btn {width: 130px; margin-left: 180px; padding-left: 10px; }
+h2 a#istid-btn, h2 a#login-btn, h2 a#logout-btn  {width: 100px; text-align: center;}
+
+h2 a#network-btn,
+h2 a#network-btn.sel
+/*h2 a#login-btn,
+   h2 a#login-btn.sel*/ {background-image: url(/site_media/static/img/icons.png); background-repeat: no-repeat;}
+*a#network-btn, *a#istid-btn, a#login-btn, a#logout-btn,  #bar-open section h3 #edit a, .inputtext {background-color: #444 !important;}
+*a#network-btn.sel, a:hover#network-btn, a:hover#istid-btn , a:hover#login-btn, a:hover#logout-btn, #bar-open #ist-network-menu section ul li a:hover, #bar-open section h3 #edit a:hover, .inputtext:focus {background-color: #333 !important;}
+
+h2 a#istid-btn,
+h2 a#network-btn,
+h2 a#login-btn,h2 a#logout-btn,
+#bar-open section h3 #edit a {background-color: #434343; background-color: rgba(51, 51, 51, 0.5);}
+
+h2 a#network-btn.sel,
+h2 a:hover#network-btn,
+h2 a:hover#istid-btn,
+h2 a:hover#login-btn,h2 a:hover#logout-btn,
+h2 a:hover#network-btn.sel,
+#bar-open #ist-network-menu section ul li a:hover,
+#bar-open section h3 #edit a:hover,
+.inputtext:focus {background-color: #3A3A3A; background-color: rgba(51, 51, 51, 0.8);}
+
+h2 a#network-btn {background-position:right 0;}
+h2 a#network-btn.sel {background-position:right -46px;}
+/*h2 a#login-btn {background-position:right -92px;}
+h2 a#login-btn.sel {background-position: right -138px;}*/
+h2 a:hover#network-btn {background-position: right -23px;}
+/*h2 a:hover#login-btn {background-position: right -115pxt;}*/
+h2 a:hover#network-btn.sel {background-position: right -69px;}
+/*h2 a:hover#login-btn.sel {background-position: right -161px;}*/
+
+		
+		/* Barra Aberta */
+		
+#bar-open{	float: left; position: relative;
+  border-top: 1px dotted #CCC;
+  box-shadow: inset -10px -10px 15px -10px rgba(0, 0, 0, 0.65);
+  webkit-box-shadow: inset -10px -10px 15px -10px rgba(0, 0, 0, 0.65);
+  moz-box-shadow: inset -10px -10px 15px -10px rgba(0, 0, 0, 0.65);
+  *background: url(/site_media/static/img/shadow.png) top left repeat-x !important; /* IE 7 and below */
+  _background: url(/site_media/static/img/shadow.png) top left repeat-x !important; /* IE 6 and below */
+  background: url(/site_media/static/img/shadow.png) top left repeat-x\0/ !important;
+}
+
+
+/* Noticia dentro da barra */	
+
+#bar-open article,
+#bar-open article h3,
+#bar-open article p {float: left; width: 160px; line-height: 1.2; }
+#bar-open article a:hover p{color:#EEE;}
+#bar-open article {margin-top: 54px; margin-right: 10px; position: relative;  }
+#bar-open article h3{padding-bottom: 20px; font-size: 16px; font-family: 'KlavikaMediumPlain', Arial, Helvetica, sans-serif; }
+#bar-open article p{padding-bottom: 235px; font-size: 14px;}
+#bar-open article img{position: absolute; right:-0px; bottom:0;}
+#bar-open article a{float:left;}
+#bar-open article{
+  height:341px;
+}
+#bar-open #warning h3 {color:#FFCC00;}
+#bar-open #warning p {color:#DDD;}
+
+/* Blocos com os links relativos a Serviços / Acessos rápidos / Media */	
+
+h3 .white {color: #DDD; padding-left: 15px; font-family: 'KlavikaLightPlain', Arial, Helvetica, sans-serif;}
+#bar-open nav {float: left;}
+#bar-open #ist-network-menu section{float: left; width: 220px; margin: 0 10px;}
+#bar-open #edit-quick-access section{float: left; width: 700px; margin: 0 0 0 180px;}
+#bar-open #ist-network-menu section h3{width: 210px; padding-left: 10px;}
+#bar-open #edit-quick-access section h3{width: 690px; padding-left: 10px;}
+#bar-open section h3{float: left; padding-top: 2px; color:#00CCFF; height: 56px; font-size: 15px; font-weight: normal; line-height: 56px; border-bottom: 1px dotted #CCC; position: relative;}
+#bar-open section h3 #edit {position: absolute; top:23px; right:0;}
+
+#bar-open section h3 #edit a {float:left; margin-left:10px; font-size: 10px; line-height: 1; text-transform: uppercase; padding: 4px 19px 0 9px; height: 13px; border-radius: 2px; -webkit-border-radius: 2px; -khtml-border-radius: 2px;	-moz-border-radius: 2px; background-image: url(/site_media/static/img/edit.png); background-repeat: no-repeat; background-position: right 0px;}
+#bar-open section h3 #edit a:hover {background-position: right -17px;}
+#bar-open section h3 #edit a.cancel {background-image: none !important; padding-right: 9px !important;}
+#bar-open section h3 #edit a:hover.cancel {color:#FFFF00;}
+#bar-open section h3 #edit a:hover.save {color:#66FF00; background-position: right -34px;}
+
+#bar-open #ist-network-menu section ul, 
+#bar-open #ist-network-menu section ul li {float: left; width:220px; list-style-type: none;}
+#bar-open #edit-quick-access section ul, 
+#bar-open #edit-quick-access section ul li {float: left; width:700px; list-style-type: none; position: relative;}
+
+#bar-open #ist-network-menu section ul{padding: 0 0 36px;}
+#bar-open #edit-quick-access section ul{padding: 0 0 56px;}
+#bar-open #ist-network-menu section ul li{padding: 3px 0; border-bottom: 1px dotted #CCC;}
+#bar-open #edit-quick-access section ul li{padding: 5px 0; border-bottom: 1px dotted #CCC;}
+#bar-open #ist-network-menu section ul li a{float: left; width:210px; padding-left: 10px; height: 23px; font-size: 13px; line-height: 23px; overflow: hidden; border-radius: 3px; -webkit-border-radius: 3px;-moz-border-radius: 3px;}
+#ist-network-menu {}
+#edit-quick-access {}
+
+.checkbox-option {float:left; width: 12px; height: 12px; margin: 6px 10px 0 10px;}
+.inputtext {float:left; width:394px; padding: 0 10px; height: 23px; font-size: 13px; line-height: 23px; font-family: 'KlavikaRegularPlain', Arial, Helvetica, sans-serif; color: #BBBBBB; background: none;}
+.inputtext.inputtext-title {width:200px; margin-right: 10px;}
+.inputtext:focus {color:#00CCFF;}
+.inputtext {background-color: #434343; background-color: rgba(51, 51, 51, 0.3);}
+#bar-open #edit-quick-access a.move{float:left; width:14px; padding-left: 9px; height: 23px; display: inline-block; background: url(/site_media/static/img/move.png) 0 0 no-repeat;}	
+#bar-open #edit-quick-access a:hover.move{background: url(/site_media/static/img/move.png) 0 -23px no-repeat;}	
+
+.tooltip {position:absolute; top:-1px; height:35px; line-height:35px; font-size: 13px; color: #333; background-image: url(/site_media/static/img/tooltip-sprite.png); background-repeat: no-repeat; display: block;}
+.tooltip.left {left:-130px; background-position: top right; padding: 0 23px 0 8px;}
+.tooltip.right {right:-79px; background-position: bottom left; padding: 0 8px 0 23px;}
+.tooltip.left .end,
+.tooltip.right .end{position:absolute; width:10px; height:35px; background-image: url(/site_media/static/img/tooltip-sprite.png); background-repeat: no-repeat; display: block;}
+.tooltip.left .end{top:0; left:-10px; background-position: top left;}
+.tooltip.right .end{top:0; right:-10px; background-position: bottom right;}
+
+.move{
+  cursor:move;
+}
+
+.tooltip{
+  display:none;
+}

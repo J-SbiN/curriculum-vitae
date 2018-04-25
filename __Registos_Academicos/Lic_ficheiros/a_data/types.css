@@ -1,0 +1,50 @@
+		@font-face {
+			font-family: 'KlavikaBold';
+			src: url('/site_media/static/type/klavikaboldbold-webfont.eot');
+			src: url('/site_media/static/type/klavikaboldbold-webfont.eot?#iefix') format('embedded-opentype');
+			src: local('☺'), 
+				url('/site_media/static/type/klavikaboldbold-webfont.woff') format('woff'), 
+				url('/site_media/static/type/klavikaboldbold-webfont.ttf') format('truetype'), 
+				url('/site_media/static/type/klavikaboldbold-webfont.svg#webfontBUN34PZS') format('svg');
+			font-weight: bold;
+			font-style: normal;
+		}
+		
+		
+		@font-face {
+			font-family: 'KlavikaMediumPlain';
+			src: url('/site_media/static/type/klavikamedium-plain-webfont.eot');
+			src: url('/site_media/static/type/klavikamedium-plain-webfont.eot?#iefix') format('embedded-opentype');
+			src: local('☺'), 
+				url('/site_media/static/type/klavikamedium-plain-webfont.woff') format('woff'), 
+				url('/site_media/static/type/klavikamedium-plain-webfont.ttf') format('truetype'), 
+				url('/site_media/static/type/klavikamedium-plain-webfont.svg#webfontTWPh10Er') format('svg');
+			font-weight: bold;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'KlavikaRegularPlain';
+			src: url('/site_media/static/type/klavikaregular-plain-webfont.eot');
+			src: url('/site_media/static/type/klavikaregular-plain-webfont.eot?#iefix') format('embedded-opentype');
+			src: local('☺'), 
+				url('/site_media/static/type/klavikaregular-plain-webfont.woff') format('woff'), 
+				url('/site_media/static/type/klavikaregular-plain-webfont.ttf') format('truetype'), 
+				url('/site_media/static/type/klavikaregular-plain-webfont.svg#webfontDvaJrdUe') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'KlavikaLightPlain';
+			src: url('/site_media/static/type/klavikalight-plain-webfont.eot');
+			src: url('/site_media/static/type/klavikalight-plain-webfont.eot?#iefix') format('embedded-opentype');
+			src: local('☺'), 
+				url('/site_media/static/type/klavikalight-plain-webfont.woff') format('woff'), 
+				url('/site_media/static/type/klavikalight-plain-webfont.ttf') format('truetype'), 
+				url('/site_media/static/type/klavikalight-plain-webfont.svg#webfontpalXHmZY') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		
