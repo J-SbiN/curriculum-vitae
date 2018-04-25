@@ -1,0 +1,10 @@
+
+#  git ignore file  #
+#####################
+
+
+
+
+## Ignore Specific Curricula Folders
+__*/
+
