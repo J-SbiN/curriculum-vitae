@@ -2,4 +2,4 @@
 
 My curiculum vitae needed versioning.
 And a remote repo.
-And I'll probably migrate it from Word to Tex.
+And I'm considering migrating it from Word to Tex.
