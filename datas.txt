@@ -24,6 +24,7 @@ Divulgação, promoção, e apresentação de produtos e serviços.
 
 
 
+
 2011-10-21		2014-11-21
 
 Laboratório de Instrumentação e Fisica Experimntal de Particulas & Campus Tecnológico Nuclear
@@ -33,5 +34,15 @@ Recolha, tratamento e análise de dados de uma máquina de PET (Positron Emission 
 Recolha, tratamento e análise de dados de amostras cristalinas de AlGaInN com XRD (X-Ray Diffraction) e RBS (Rutherford Backsattering Spectrometry).
 
 
+
+
+
+04/12/2016		24/07/2018
+
+Premium Minds
+
+Dev-Ops, Support, Q&A
+Deploy e backup em sistemas distribuidos.
+Sistemas de monitorização e alarmistica.
 
 

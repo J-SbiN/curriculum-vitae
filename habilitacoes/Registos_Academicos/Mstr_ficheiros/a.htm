@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html hola_ext_inject="ready" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" dir="ltr" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="domains" content="ist.utl.pt,inesc.pt,inesc-id.pt,tecnico.pt,tecnico.ulisboa.pt">
+		
+    <link rel="stylesheet" href="a_data/types.css">
+    <link rel="stylesheet" href="a_data/barra.css">
+    <script src="a_data/jquery-1.js"></script>
+    <script src="a_data/handling.js"></script>
+    <script src="a_data/jsuri.js"></script>
+    <script src="a_data/jquery-ui-1.js"></script>
+<script src="a_data/m.js"></script>
+    <script type="text/javascript">
+      var csrf = "RA2QVic0aC8TWuslvs6vJ63T2O2PQdZU";
+    </script>
+   </head>
+<body hola-ext-player="1">
+  <section id="bar-ist-network" class="liquid">
+    <div id="bar">
+      <div class="width">
+	<h1><a id="logo" href="#" to="http://ist.utl.pt" title="Homepage do IST">Instituto Superior <strong>Técnico</strong></a></h1>
+	<div class="inner-width">
+	  <h2 id="main-options">
+	    <a id="network-btn" onclick="toogleBar(); return false;" href="#" title="Visualize todas as opções dentro do menu 'Network'">Network</a>
+          </h2>
+        </div>
+	<section id="authentication">
+	  
+		  
+		  <p id="message">boa noite</p>
+		  <p id="name">Jorge Sabino</p>
+		  <h2><a id="logout-btn" class="sel" href="#" title="Encerre a sua sessão">Logout</a></h2>
+	  
+    </section>
+      </div>
+   </div>
+    
+    <!-- Barra Aberta -->
+
+    <div id="bar-open" class="hidden" style="height:395px">			
+    
+      <div id="edit-quick-access" style="height: 395px; left: 0px; display: none;" class="width ">	
+	<section>
+	  <h3>Acessos Rápidos <span class="white">Edite e ordene os seus acessos rápidos</span><div id="edit"><a onclick="toogleEdit(); return false;" class="cancel" href="#" title="Cancelar alterações ">Cancelar</a><a class="save" href="#" onclick="saveEditedLinks(); return false;" title="Salvar Alterações">Salvar alterações</a></div></h3>
+	  <ul style="" class="ui-sortable" id="edit-url-list">
+            <div style="" class="tooltip left"><div class="end"></div>Activar / Desactivar</div>
+	    <div style="" class="tooltip right">Ordenar<div class="end"></div></div>
+	    
+	    <li style="">
+	      <form>					
+		<input checked="checked" id="btn" class="checkbox-option" type="checkbox">
+		<input id="name" class="inputtext inputtext-title" value="Candidaturas " maxlength="36" placeholder="Nome do botão" type="text">
+                <input id="order" value="0" type="hidden">
+		<input id="link" class="inputtext" value="http://www.ist.utl.pt/pt/candidatos/candidaturas/ " placeholder="Endereço (tem de conter obrigatoriamente o domínio 'ist.utl.pt')" type="text">
+		<a class="move" title="Arraste e largue na posição desejada para modificar a ordenação da lista" href="#"></a>
+               </form>
+            </li>
+            
+	    <li style="">
+	      <form>					
+		<input checked="checked" id="btn" class="checkbox-option" type="checkbox">
+		<input id="name" class="inputtext inputtext-title" value="Ensino" maxlength="36" placeholder="Nome do botão" type="text">
+                <input id="order" value="1" type="hidden">
+		<input id="link" class="inputtext" value="http://www.ist.utl.pt/pt/ensino/" placeholder="Endereço (tem de conter obrigatoriamente o domínio 'ist.utl.pt')" type="text">
+		<a class="move" title="Arraste e largue na posição desejada para modificar a ordenação da lista" href="#"></a>
+               </form>
+            </li>
+            
+	    <li style="">
+	      <form>					
+		<input checked="checked" id="btn" class="checkbox-option" type="checkbox">
+		<input id="name" class="inputtext inputtext-title" value="Investigação" maxlength="36" placeholder="Nome do botão" type="text">
+                <input id="order" value="2" type="hidden">
+		<input id="link" class="inputtext" value="http://www.ist.utl.pt/pt/investigacao/" placeholder="Endereço (tem de conter obrigatoriamente o domínio 'ist.utl.pt')" type="text">
+		<a class="move" title="Arraste e largue na posição desejada para modificar a ordenação da lista" href="#"></a>
+               </form>
+            </li>
+            
+	    <li style="">
+	      <form>					
+		<input checked="checked" id="btn" class="checkbox-option" type="checkbox">
+		<input id="name" class="inputtext inputtext-title" value="Organização" maxlength="36" placeholder="Nome do botão" type="text">
+                <input id="order" value="3" type="hidden">
+		<input id="link" class="inputtext" value="http://www.ist.utl.pt/pt/organizacao/" placeholder="Endereço (tem de conter obrigatoriamente o domínio 'ist.utl.pt')" type="text">
+		<a class="move" title="Arraste e largue na posição desejada para modificar a ordenação da lista" href="#"></a>
+               </form>
+            </li>
+            
+	    <li style="">
+	      <form>					
+		<input checked="checked" id="btn" class="checkbox-option" type="checkbox">
+		<input id="name" class="inputtext inputtext-title" value="Viver no IST" maxlength="36" placeholder="Nome do botão" type="text">
+                <input id="order" value="4" type="hidden">
+		<input id="link" class="inputtext" value="http://www.ist.utl.pt/pt/viver-IST/" placeholder="Endereço (tem de conter obrigatoriamente o domínio 'ist.utl.pt')" type="text">
+		<a class="move" title="Arraste e largue na posição desejada para modificar a ordenação da lista" href="#"></a>
+               </form>
+            </li>
+            
+	    <li style="">
+	      <form>					
+		<input id="btn" class="checkbox-option" type="checkbox">
+		<input id="name" class="inputtext inputtext-title" maxlength="36" placeholder="Nome do botão" type="text">
+                <input id="order" value="5" type="hidden">
+		<input id="link" class="inputtext" placeholder="Endereço (tem de conter obrigatoriamente o domínio 'ist.utl.pt')" type="text">
+		<a class="move" title="Arraste e largue na posição desejada para modificar a ordenação da lista" href="#"></a>
+               </form>
+            </li>
+            
+	    <li style="">
+	      <form>					
+		<input id="btn" class="checkbox-option" type="checkbox">
+		<input id="name" class="inputtext inputtext-title" maxlength="36" placeholder="Nome do botão" type="text">
+                <input id="order" value="6" type="hidden">
+		<input id="link" class="inputtext" placeholder="Endereço (tem de conter obrigatoriamente o domínio 'ist.utl.pt')" type="text">
+		<a class="move" title="Arraste e largue na posição desejada para modificar a ordenação da lista" href="#"></a>
+               </form>
+            </li>
+            
+	    <li style="">
+	      <form>					
+		<input id="btn" class="checkbox-option" type="checkbox">
+		<input id="name" class="inputtext inputtext-title" maxlength="36" placeholder="Nome do botão" type="text">
+                <input id="order" value="7" type="hidden">
+		<input id="link" class="inputtext" placeholder="Endereço (tem de conter obrigatoriamente o domínio 'ist.utl.pt')" type="text">
+		<a class="move" title="Arraste e largue na posição desejada para modificar a ordenação da lista" href="#"></a>
+               </form>
+            </li>
+            
+           </ul>
+        </section>
+
+	<div class="cf"></div>
+        </div>
+      
+      
+      <div id="ist-network-menu" class="width" style="height:295; width:980px; position:relative; ">
+	
+	<nav>
+	  <article>
+	    <a href="#" title="Tenha a imagem do Técnico sempre consigo" to="http://www.ist.utl.pt/pt/media/media-kit/#wallpapers?utm_source=barra&amp;utm_medium=referral&amp;utm_campaign=wallpaper">
+	      <h3>Tenha a imagem do Técnico sempre consigo</h3>
+	      <p>Faça download do ficheiro no Media Kit e personalize o wallpaper do seu desktop, tablet ou smartphone. </p>
+              
+	      <img style="position:absolute; right:0px;bottom: 0;" src="a_data/wallpaper_1.png">
+              
+            </a>
+          </article>
+
+	  <section>
+	    <h3>Serviços</h3>
+	    <ul>
+	      
+		<li><a href="#" to="https://fenix.tecnico.ulisboa.pt/" title="Fénix">Fénix</a></li>
+	        
+		<li><a href="#" to="http://mail.ist.utl.pt/" title="Mail">Mail</a></li>
+	        
+		<li><a href="#" to="https://dot.tecnico.ulisboa.pt" title="Aplicações Centrais · IST">Aplicações Centrais · IST</a></li>
+	        
+		<li><a href="#" to="http://sotis.tecnico.ulisboa.pt/" title="Documentos Científicos · SOTIS">Documentos Científicos · SOTIS</a></li>
+	        
+		<li><a href="#" to="http://quc.ist.utl.pt/" title="Qualidade das Unidades Curriculares">Qualidade das Unidades Curriculares</a></li>
+	        
+		<li><a href="#" to="https://selfservice.dsi.tecnico.ulisboa.pt/" title="Self-service">Self-service</a></li>
+	        
+	    </ul>
+	  </section>
+	  
+	  <section>
+	    <h3>Acessos Rápidos
+              
+              <div id="edit">
+                <a href="#" onclick="toogleEdit(); return false;" title="Edite os acessos rápidos listados">Editar</a>
+         </div>
+              
+      </h3>
+	    <ul id="center-list">
+	      
+              
+	      <li>
+                <a href="#" to="http://www.ist.utl.pt/pt/candidatos/candidaturas/ " title="Candidaturas ">Candidaturas </a>
+              </li>
+              
+	      
+              
+	      <li>
+                <a href="#" to="http://www.ist.utl.pt/pt/ensino/" title="Ensino">Ensino</a>
+              </li>
+              
+	      
+              
+	      <li>
+                <a href="#" to="http://www.ist.utl.pt/pt/investigacao/" title="Investigação">Investigação</a>
+              </li>
+              
+	      
+              
+	      <li>
+                <a href="#" to="http://www.ist.utl.pt/pt/organizacao/" title="Organização">Organização</a>
+              </li>
+              
+	      
+              
+	      <li>
+                <a href="#" to="http://www.ist.utl.pt/pt/viver-IST/" title="Viver no IST">Viver no IST</a>
+              </li>
+              
+	      
+              
+	      
+              
+	      
+              
+	      
+            </ul>
+         </section>
+	  
+	  <section>
+	    <h3>Media</h3>
+	    <ul>
+	      
+	      <li>
+                <a href="#" to="http://valoresproprios.ist.utl.pt/" title="Valores Próprios">Valores Próprios</a>
+              </li>
+	      
+	      <li>
+                <a href="#" to="http://www.ist.utl.pt/pt/noticias/arquivo/" title="Noticias">Noticias</a>
+              </li>
+	      
+	      <li>
+                <a href="#" to="http://www.ist.utl.pt/pt/eventos/arquivo/" title="Eventos">Eventos</a>
+              </li>
+	      
+	      <li>
+                <a href="#" to="https://www.facebook.com/pages/Instituto-Superior-T%C3%A9cnico/253571472881" title="Facebook">Facebook</a>
+              </li>
+	      
+	      <li>
+                <a href="#" to="https://twitter.com/istecnico" title="Twitter">Twitter</a>
+              </li>
+	      
+	      <li>
+                <a href="#" to="http://www.youtube.com/user/isttv#g/u" title="YouTube">YouTube</a>
+              </li>
+	      
+	      <li>
+                <a href="#" to="http://www.ist.utl.pt/pt/media/media-kit/" title="Media Kit do IST">Media Kit do IST</a>
+              </li>
+	      
+	      <li>
+                <a href="#" to="http://www.ist.utl.pt/pt/media/submissao/" title="Submissão de Noticias e Eventos">Submissão de Noticias e Eventos</a>
+              </li>
+	      
+	    </ul>
+	  </section>
+	</nav>					
+	<div class="cf"></div>
+      </div>
+      
+      
+    </div>
+    <div class="cf"></div>
+    
+   </section>
+   
+
+</body></html>
