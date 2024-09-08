@@ -1,6 +1,11 @@
 #!/bin/bash
 
-SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+function print-self-dir () {
+    echo "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+}
+
+
+SCRIPT_DIR="$(print-self-dir)"
 
 echo "What is the topic of this application?"
 read TOPIC
